@@ -1,0 +1,153 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-color: aliceblue;
+} 
+header{
+    width:100%;
+    height:10vh;
+    display: flex;
+    justify-content:space-between;
+    padding:2rem;
+    align-items: center;
+}
+nav{
+    width:100%;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    margin:2rem;
+    list-style: none;
+    
+}
+.active{
+  background: linear-gradient(to left,#686de0,#2e86de);
+  color:white;
+}
+nav ul li a{
+    font-size:1.8rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color:#22a6b3;
+    padding:1.2rem;
+    border-radius: 0.6rem;
+}
+.menu i{
+    display: none;
+}
+/*-------------------------- hero--------------------------- */
+.hero{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hbox{
+    width:40%;
+}
+.right img{
+    width:100%;
+}
+.left h1{
+    font-size:3rem;
+    font-family: sans-serif;
+    color:#2c3e50;
+    margin-bottom: 1.5rem;
+}
+.left p{
+    font-size:1.3rem;
+    line-height:2rem;
+    font-family: sans-serif;
+    color:#2c3e50;
+    margin-bottom: 1.5rem;
+    color: #7f8c8d;
+}
+.left button{
+    width:14rem;
+    height:4rem;
+    padding:1rem;
+    border:none;
+    outline:none;
+    background:#8e44ad;
+    color:white;
+    font-size:1.5rem;
+    font-family:sans-serif;
+    border-radius: 0.4rem;
+}
+.left button:hover{
+    border:2px solid #8e44ad;
+    background: transparent;
+    color:black;
+}
+.activemenu{
+    display: block;
+    transition:0.5s;
+}
+
+
+
+
+
+
+/* -------------------responsive----------------------- */
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+    nav{
+        position:fixed;
+        top:10vh;
+        left:0;
+        background:gray;
+        width:100%;
+        height:auto;
+        padding:2rem;
+        display:none;
+    }
+    nav ul li{
+        display:block;
+        margin-top:1rem;
+        text-align: center;
+    }
+    .menu{
+        float:right;
+    }
+    .menu i{
+        display: block;
+        float: right;
+        font-size: 4rem;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        gap:5rem;
+    }
+    .hbox{
+        width:80%;
+        height:auto;
+    }
+    .right img{
+        height:100%;
+        width:70%;
+    }
+    .left h1{
+        font-size:2.5rem ;
+    }
+}
