@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- boxicon icon -->
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- css file  -->
+    <link rel="stylesheet"href="style.css"/>
+    <!-- type js  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+   <div class="container">
+<header>
+    <nav id="nav">
+     <ul>
+        <li><a href="#"class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+     </ul>
+    </nav>
+    <div class="menu"id="menu">
+        <i class='bx bx-menu-alt-right'onclick="activemenu()"></i>
+    </div>
+</header>
+<!-- hero -->
+<div class="hero">
+
+    <div class="hbox left">
+      <h1>Hi,I Am Abusaid(Shihab)</h1>
+      <h1>I am a <span id="text"></span></h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad fugiat odio modi, atque neque, sint voluptatum ipsa ipsam commodi quas in officiis
+     mollitia maxime, alias molestias similique! Sit, earum ut.</p>
+     <button>Hire me</button>
+    </div>
+
+    
+    <div class="hbox right">
+        <img src="https://preview.colorlib.com/theme/personal/img/xhero-img.png.pagespeed.ic.INRfo5JT2o.webp"alt="my image"/>
+    </div>
+</div>
+
+
+
+<!-- hero -->
+   </div> 
+
+   <script>
+var typed = new Typed('#text', {
+  strings: ['web designer', 'web developer'],
+  typeSpeed:100,
+  backSpeed:100,
+  loop:true,
+});
+var nav=document.getElementById("nav");
+var menu=document.getElementById("menu");
+function activemenu(){
+    nav.classList.toggle("activemenu");
+}
+
+   </script>
+</body>
+</html>
